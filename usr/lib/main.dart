@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'auth_screen.dart';
+import 'forgot_password_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -41,6 +42,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const RGSAuthScreen(),
+        '/forgot-password': (context) => const RGSForgotPasswordScreen(),
       },
     );
   }

@@ -239,7 +239,9 @@ class _RGSAuthScreenState extends State<RGSAuthScreen> {
           const Text('Remember me'),
           const Spacer(),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/forgot-password');
+            },
             style: TextButton.styleFrom(foregroundColor: _primaryColor),
             child: const Text('Forgot Password?'),
           ),
